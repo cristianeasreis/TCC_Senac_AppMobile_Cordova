@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Login</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="icons/material.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+	<br>
+	<div class="container">
+		<br><br>
+		<div class="center img">
+			<img class="responsive-img" src="img/logof.png">
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col s12 l12 m4 offset-m4">
+			<div class="card">
+				<div class="card-action  red darken-1 white-text">
+					<h5>Efetue Seu Login</h5>
+				</div>
+				<div class="card-content">
+					<form id="formLogin">
+						<div class="form-field">
+							<i class="material-icons prefix">account_circle</i>
+							<label for="email">Email</label>
+							<input id="email" type="email" class="validate" maxlength="100" placeholder="Digite Seu Email">
+						</div><br>
+						<div class="form-field">
+							<i class="material-icons prefix">lock</i>
+							<label for="password">Senha</label>
+							<input id="password" type="password" class="validate" maxlength="100" placeholder="Digite Sua Senha">
+						</div><br>
+						<div class="form-field">
+							<button id="btnEntrar" class="btn waves-effect waves-light red darken-1" type="submit"
+								name="action">Entrar</button>
+							</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+    </div>
+    
+
+	<script src="js/js.cookie.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/loginsripit.js"></script>
+	<script src="js/jquery.mask.js"></script>
+
+</body>
+
+</html>

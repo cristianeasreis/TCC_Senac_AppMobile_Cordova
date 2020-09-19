@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>
+        Pesquisa De Cliente
+    </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pcliente.css">
+</head>
+
+<body class="fundo">
+    <!-- Menu -->
+
+    <nav class=" brown darken-1">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <H5>Pesquisar Cliente</H5>
+            </a>
+        </div>
+        <div class="container ">
+            <ul id="slide-out" class="side-nav">
+                <div class=" back  ">
+                    <div>
+                        <br>
+                        <div class="container center">
+                            <img class="logo" src="img/logof.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="logado">
+                    <a href="#!nome"><span id="Nome" class="black-text nome"> Jean Administrador </span></a>
+                </div>
+                <div class="container ">
+                    <div class="divider"></div>
+                    <li><a href="cadcliente.html"><i id="CadiCliente" class="material-icons">border_color</i>
+                            Cadastro de Cliente</a></li>
+                    <li><a href="pcliente.html"><i id="PesqCliente" class="material-icons">search</i> Pesquisa de
+                            Cliente</a></li>
+                    <div class="divider"></div>
+                    <li><a href="cadagendamento.html"><i id="CadAgendamento" class="material-icons">border_color
+                            </i> Cadastro de Agendamento</a></li>
+                    <li><a href="pagendamento.html"><i id="PesqAgendamento" class="material-icons">search</i>
+                            Pesquisa de Agendamneto</a></li>
+                    <div class="divider"></div>
+                    <li><a href="cadestoque.html"><i id="CadEstoque" class="material-icons">border_color</i>
+                            Cadastro de Estoque</a></li>
+                    <li><a href="pestoque.html"><i id="PesqEstoque" class="material-icons">search</i> Pesquisa de
+                            Estoque</a></li>
+                    <div class="divider"></div>
+                    <div class="right">
+                        <button id="btnSair" class="btn waves-effect waves-light red darken-1" type="submit"
+                            name="action">Sair</button>
+                    </div>
+            </ul>
+        </div>
+        </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container ip">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="icon_prefix"></label>
+                        <div class="right">
+                            <i id="btnPesquisa" class="material-icons prefix">search</i>
+                        </div>
+                        <input id="icon_prefix" type="text" class="validate" placeholder="Pesquisar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="center-align">
+            <table id="tabela" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome Empresa
+                        </th>
+                        <th>
+                            CNPJ
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <!-- botao novo -->
+    <div class="fixed-action-btn">
+        <a href="cadcliente.html" id="btnNovoCliente" class="btn-floating btn-large waves-effect waves-light blue">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <!-- Formulario -->
+    <div id="confirmacao" class="modal modal-fixed-footer">
+        <div class="janelaFormulario fundo">
+            <form id="formulario">
+                    <h5 id="TituloModal"></h5>
+                <input type="hidden" name="Id" id="Id">
+                <div class="row">
+                    <div class="input-field col s12">
+
+                        <input type="hidden" name="id" id="Id" class="validate" maxlength="100" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="nome">Nome Da Empresa</label>
+                        <input type="text" name="nome" id="nome" class="validate" maxlength="100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" id="cnpj" class="validate" maxlength="16"
+                            data-mask="00.000.000/0000-00">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" class="validate" maxlength="50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" class="validate" maxlength="25"
+                            data-mask="(00)0000-0000">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="celular">Celular</label>
+                        <input type="text" name="celular" id="celular" class="validate" maxlength="25"
+                            data-mask="(00)00000-0000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" class="validate" maxlength="100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="numero">Numero</label>
+                        <input type="text" name="numero" id="numero" class="validate" maxlength="20">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento" class="validate" maxlength="20">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" class="validate" maxlength="50">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="validate" maxlength="50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" class="validate" maxlength="50">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="cep">Cep</label>
+                        <input type="text" name="cep" id="cep" class="validate" maxlength="10" data-mask="00000-000">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <button id="btnSalvar" class="btn waves-effect waves-light red darken-1" type="button"
+                        name="action">Salvar</button>
+                    </button>
+                </div>
+                <br>
+
+
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/js.cookie.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/scriptcliente.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/pesquisacliente.js"></script>
+    <script src="js/autenticacao.js"></script>
+
+
+</body>
+
+</html>

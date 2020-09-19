@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>
+        Pesquisa Agendamento
+    </title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pagendamento.css">
+</head>
+
+<body class="fundo">
+    <!-- Menu -->
+
+    <nav class=" brown darken-1">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"> <h5>Pesquisa Agendamento</h5></a>
+        </div>
+        <div class="container ">
+            <ul id="slide-out" class="side-nav">
+                <div class=" back  ">
+                    <div>
+                        <br>
+                        <div class="container center">
+                            <img class="logo" src="img/logof.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="logado">
+                    <a href="#!nome"><span id="Nome" class="black-text nome"> Jean Administrador </span></a>
+                </div>
+                <div class="container ">
+                    <div class="divider"></div>
+                    <li><a href="cadcliente.html"><i id="CadiCliente" class="material-icons">border_color</i>
+                            Cadastro de Cliente</a></li>
+                    <li><a href="pcliente.html"><i id="PesqCliente" class="material-icons">search</i> Pesquisa de
+                            Cliente</a></li>
+                    <div class="divider"></div>
+                    <li><a href="cadagendamento.html"><i id="CadAgendamento" class="material-icons">border_color
+                            </i> Cadastro de Agendamento</a></li>
+                    <li><a href="pagendamento.html"><i id="PesqAgendamento" class="material-icons">search</i>
+                            Pesquisa de Agendamneto</a></li>
+                    <div class="divider"></div>
+                    <li><a href="cadestoque.html"><i id="CadEstoque" class="material-icons">border_color</i>
+                            Cadastro de Estoque</a></li>
+                    <li><a href="pestoque.html"><i id="PesqEstoque" class="material-icons">search</i> Pesquisa de
+                            Estoque</a></li>
+                    <div class="divider"></div>
+                    <div class="right">
+                        <button id="btnSair" class="btn waves-effect waves-light red darken-1" type="submit"
+                            name="action">Sair</button>
+                    </div>
+            </ul>
+        </div>
+        </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container ip">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="icon_prefix"></label>
+                        <div class="right">
+                           <i id="Pesquisa" class="material-icons prefix">search</i>                           
+                        </div>
+                        <input id="icon_prefix" type="text" class="validate" placeholder="Pesquisar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        
+
+        <div class="container">
+            <div class="center-align">
+                <table id="tabela" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Empresa
+                            </th>
+                            <th>
+                                Data Visita
+                            </th>
+                            <th>
+                                Data Serviço
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/scriptcliente.js"></script>
+    <script src="js/jquery.mask.js"></script>
+
+
+</body>
+
+</html>
